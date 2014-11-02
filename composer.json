@@ -10,5 +10,10 @@
     ],
     "minimum-stability": "dev",
     "require": {},
-    "require-dev": {}
+    "require-dev": {
+        "behat/behat": "3.*@stable",
+        "behat/mink": "*@stable",
+        "behat/mink-extension": "*",
+        "behat/mink-selenium2-driver": "*"
+    }
 }
