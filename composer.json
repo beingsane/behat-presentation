@@ -9,7 +9,9 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {},
+    "require": {
+        "silex/silex": "~1.2"
+    },
     "require-dev": {
         "behat/behat": "3.*@stable",
         "behat/mink": "*@stable",
