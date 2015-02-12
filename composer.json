@@ -12,6 +12,11 @@
     "require": {
         "silex/silex": "~1.2"
     },
+    "autoload": {
+        "psr-4": {
+            "Application\\": "src/Application"
+        }
+    },
     "require-dev": {
         "behat/behat": "3.*@stable",
         "behat/mink": "*@stable",
