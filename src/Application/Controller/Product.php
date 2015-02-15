@@ -1,5 +1,9 @@
 <?php
 
+namespace Application\Controller;
+
+use Silex\Application;
+
 final class Product
 {
     /**
