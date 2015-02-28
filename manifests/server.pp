@@ -2,6 +2,7 @@ exec { "apt-update":
   command => "/usr/bin/apt-get update"
 }
 
+# MySql Server
 package { "mysql-server":
   ensure  => installed,
   require => Exec["apt-update"],
@@ -48,3 +49,10 @@ exec { "mysql-user":
   path     => "/usr/bin/",
   require  => Exec["store-schema"],
 }
+
+# HTTP Server
+package { "apache2":
+  ensure  => installed,
+  require => Exec["apt-update"],
+}
+
