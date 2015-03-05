@@ -1,0 +1,24 @@
+{
+  "name": "behat-presentation",
+  "version": "1.0.0",
+  "homepage": "https://github.com/malukenho/behat-presentation",
+  "authors": [
+    "Jefersson Nathan <admin@phpse.net>"
+  ],
+  "description": "Visual dependencies",
+  "main": "public/index.php",
+  "keywords": [
+    "behat",
+    "talk",
+    "php"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/assets/",
+    "test",
+    "tests"
+  ]
+}
