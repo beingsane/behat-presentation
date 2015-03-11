@@ -3,7 +3,7 @@
 require __DIR__ . '/../vendor/autoload.php';
 
 use Silex\Application;
-use Application\Controller\Product;
+use Application\Controller\UserController;
 
 $app = new Application();
 $loadConfig = function ($dir) use ($app) {
@@ -16,7 +16,15 @@ $loadConfig(__DIR__ . '/../config');
 
 $app['debug'] = true;
 
-$app->get('/', [Product::class, 'add']);
+/**
+ * @TODO: Create routes and actions following the schema bellow:
+ *
+ *   METHOD  |    ROUTER    |   DESCRIPTION
+ * ----------+--------------+-----------------------------
+ *    POST   -> /save       |   Create a new user
+ */
+$app->get('/',  [UserController::class, 'index']);
+$app->post('/', [UserController::class, 'login']);
 
 $app->run();
 
