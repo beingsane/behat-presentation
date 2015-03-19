@@ -1,0 +1,13 @@
+default:
+  autoload:
+    '': %paths.base%/features/bootstrap
+  suites:
+    authentication:
+      paths:    [ %paths.base%/features/login.feature ]
+      contexts: [ SignUpContext, Popup ]
+  extensions:
+    Behat\MinkExtension:
+      base_url: http://192.168.33.13
+      sessions:
+        default:
+          selenium2: ~
