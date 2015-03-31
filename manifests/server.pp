@@ -11,7 +11,7 @@ file { "/etc/mysql/conf.d/allow_external.cnf":
   owner    => mysql,
   group    => mysql,
   mode     => 0644,
-  content  => "[mysqld]\n  bind-address = 0.0.0.0",
+  content  => template("./allow_external.cnf"),
   require  => Package["mysql-server"],
   notify   => Service["mysql"],
 }
