@@ -1,0 +1,14 @@
+{
+    "name": "malukenho/behat-presentation",
+    "description": "Talk about DDD + BDD + Behat for EXPOTEC 2015",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jefersson Nathan",
+            "email": "admin@phpse.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {}
+}
